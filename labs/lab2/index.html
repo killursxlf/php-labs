@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab Work No. 2</title>
+  <link rel="stylesheet" href="/common/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lab Work No. 2</h1>
+    <div class="links">
+      <a href="list.php">View files list (uploads)</a>
+      ·
+      <a href="text.php">Open log (log.txt)</a>
+    </div>
+  </header>
+
+  <section class="row">
+    <div class="card">
+      <h2>Image upload form</h2>
+      <form action="process.php" method="post" enctype="multipart/form-data">
+        <label for="thefile">Choose a file (allowed: PNG, JPG, JPEG; ≤ 2 MB)</label>
+        <input id="thefile" name="thefile" type="file" accept=".png,.jpg,.jpeg,image/png,image/jpeg" required />
+        <p class="muted">
+          After upload the file name is automatically changed to
+          <code>name-XXXXXXXX.EXT</code>, where <code>XXXXXXXX</code> are 8 digits.
+        </p>
+        <button class="btn" type="submit">Upload</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Write text to <code>log.txt</code></h2>
+      <form action="text.php" method="post">
+        <label for="text">Enter text for the log</label>
+        <textarea id="text" name="text" placeholder="Your text..." required></textarea>
+        <button class="btn" type="submit">Save text</button>
+        <a class="btn secondary" href="text.php">View log</a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="muted">
+    <p>Navigation: <a href="index.html">index.html</a> · <a href="process.php">process.php</a> · <a href="text.php">text.php</a> · <a href="list.php">list.php</a></p>
+  </footer>
+</body>
+</html>
