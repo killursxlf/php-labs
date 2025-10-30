@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="styles.php">
+<script defer src="app.php"></script>
+<script>
+(async () => {
+  const r1 = await fetch('generate-report.php'); 
+  console.log('first:', r1.headers.get('X-Cache')); 
+  const r2 = await fetch('generate-report.php');
+  console.log('second:', r2.headers.get('X-Cache'));
+})();
+</script>

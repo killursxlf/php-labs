@@ -1,6 +1,6 @@
 # PHP Labs
 
-All labs live in `labs/` as isolated folders. Open each lab’s `public/` in your browser via XAMPP.
+All labs live in `labs/` as isolated folders. Open each lab’s `public/` in your browser via XAMPP/Docker/PHP server.
 
 ## Index
 - [Lab 01](labs/lab1/)
@@ -10,4 +10,4 @@ All labs live in `labs/` as isolated folders. Open each lab’s `public/` in you
 - [Lab 04](labs/lab4/)
 - [Lab 05](labs/lab5/)
 - [Lab 06](labs/lab6/)
-
+- [Lab 07](labs/lab7/)
